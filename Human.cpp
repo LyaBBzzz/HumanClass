@@ -214,6 +214,25 @@ public:
 };
 
 int main() {
+    Lumberjack jack("Jack", "Smith", 30, "Male", "Axe", 80, "Greenwood Forest", 5, true);
+    Miner mike("Mike", "Johnson", 35, "Male", "Pickaxe", 90, "Stonehill Mine", 50, false);
+    Knight arthur("Arthur", "Pendragon", 28, "Male", "Sword", "Camelot", 10, true, "Camelot Castle");
+    Squire gawain("Gawain", "Green", 22, "Male", "Arthur Pendragon", "Serving the Knight", 3, true);
+    Archer legolas("Legolas", "Greenleaf", 1000, "Male", "Longbow", 100, "Mirkwood Forest");
+    Mage gandalf("Gandalf", "Grey", 2019, "Male", "Staff", 10000, "Fireball");
 
+    cout << "Lumberjack's tool: " << jack.GetTool() << endl;
+    cout << "Miner's equipment: " << mike.GetEquipment() << endl;
+    cout << "Knight's allegiance: " << arthur.GetAllegiance() << endl;
+    cout << "Squire's knight: " << gawain.GetKnightName() << endl;
+    cout << "Archer's bow type: " << legolas.GetBowType() << endl;
+    cout << "Mage's staff type: " << gandalf.GetStaffType() << endl;
+
+    jack.SpecialAbility();
+    mike.SpecialAbility();
+    arthur.SpecialAbility();
+    gawain.SpecialAbility();
+    legolas.SpecialAbility();
+    gandalf.SpecialAbility();
     return 0;
 }
